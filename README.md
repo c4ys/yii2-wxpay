@@ -7,16 +7,23 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
-
+```json
+{
+      "repositories": [
+        {
+          "url": "https://github.com/c4ys/yii2-wxpay.git",
+          "type": "vcs"
+        }
+      ]
+}
 ```
-php composer.phar require --prefer-dist imxiangli/yii2-wxpay "*"
-```
 
-or add
-
-```
-"imxiangli/yii2-wxpay": "*"
+```json
+{
+    "require": {
+       "c4ys/yii2-wechat": "*"
+    }
+}
 ```
 
 to the require section of your `composer.json` file.
@@ -39,7 +46,7 @@ return [
       // ...
       
       'wxpay' => [
-          'class' => \imxiangli\wxpay\WxPayApi::className(),
+          'class' => \c4ys\wxpay\WxPayApi::className(),
           'app_id' => '', // 绑定支付的APPID（必须配置，开户邮件中可查看）
           'mch_id' => '', // 商户号（必须配置，开户邮件中可查看）
           'key' => '', // 商户支付密钥，参考开户邮件设置（必须配置，登录商户平台自行设置）设置地址：https://pay.weixin.qq.com/index.php/account/api_cert
