@@ -1,13 +1,13 @@
 {
-    "name": "imxiangli/yii2-wxpay",
-    "description": "适用于Yii2的微信支付扩展",
+    "name": "c4ys/yii2-wxpay",
+    "description": "适用于Yii2的微信支付扩展，支持企业付款到零钱",
     "type": "library",
     "keywords": ["yii2","wxpay"],
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "lixiang",
-            "email": "imxiangli@gmail.com"
+            "name": "ning",
+            "email": "15996204@qq.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "imxiangli\\wxpay\\": ""
+            "c4ys\\wxpay\\": ""
         }
     }
 }
