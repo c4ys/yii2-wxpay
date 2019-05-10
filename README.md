@@ -28,7 +28,7 @@ Yii2微信支付扩展
 ```json
 {
     "require": {
-       "c4ys/yii2-wechat": "*"
+       "c4ys/yii2-wechat": "^2.0"
     }
 }
 ```
